@@ -1,10 +1,14 @@
-function hello(num1,num2){
-    console.log('hai')
-    sum=num1+num2;
-    console.log(sum)
-    return 10
+function person(name,age,place){
+    this.name=name
+    this.age=age
+    this.place=place
+    this.display=function(){
+        console.log("Name:"+this.name+"   Age:"+this.age+"    Place:"+this.place)
+    }
 }
 
-value=hello(20,20)
-console.log(hello());
-console.log(value)
+var roji=new person("Roji Thomas",44,"kunnumthanam")
+var cini=new person("cini joseph",44,"changanserry")
+
+roji.display()
+cini.display()
