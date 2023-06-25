@@ -11,4 +11,4 @@ var roji=new person("Roji Thomas",44,"kunnumthanam")
 var cini=new person("cini joseph",44,"changanserry")
 
 roji.display()
-cini.display()
+cini.display() 
