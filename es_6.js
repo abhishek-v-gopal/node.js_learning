@@ -1,5 +1,26 @@
-function hello(num1=0,num2){
-    console.log(num1+num2)
+class sample{
+    samplehello(){
+     console.log("this is samplehello")
+    }
 }
 
-hello(undefined,18)
+
+
+class Hello extends sample{
+    constructor(num1,num2){
+        super()
+   this.num1=num1
+   this.num2=num2
+    }
+   hello()
+{
+    console.log('the number is'+(this.num1+this.num2))
+
+}
+
+}
+
+
+let hai=new Hello(20,30)
+hai.hello()
+hai.samplehello()
