@@ -7,3 +7,7 @@ for(i=0;i<1000;i++)
 console.log("end")
 var diff=new Date()-dt
 console.log(diff)
+
+function hello(){
+    
+}
