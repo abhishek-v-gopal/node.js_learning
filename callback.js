@@ -18,19 +18,24 @@ function longtask(millisecond){
 
 }
 
-console.log('started')
-longtask(10000)
-console.log("end")
-
-console.log('started')
-longtask(10000)
-console.log("end")
-
-console.log('started')
-longtask(10000)
-console.log("end")
 
 
+function showend(){
+    console.log("end")
+}
+
 console.log('started')
-longtask(10000)
-console.log("end")
+setTimeout(showend,2000)
+
+
+
+console.log('started')
+setTimeout(showend,2000)
+
+
+
+console.log('started')
+setTimeout(showend,2000)
+
+console.log('started')
+setTimeout(showend,2000)
