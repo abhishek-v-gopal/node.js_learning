@@ -1,5 +1,15 @@
 {
   "dependencies": {
-    "readline-sync": "^1.4.10"
-  }
+    "readline-sync": "^1.4.10",
+    "upper-case": "^2.0.2"
+  },
+  "name": "learning",
+  "version": "1.0.0",
+  "main": "array.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
