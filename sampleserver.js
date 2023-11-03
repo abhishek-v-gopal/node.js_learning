@@ -24,7 +24,7 @@ http.createServer(function (req,res){
             
         }else if(q.pathname==='/action')
         {
-            res.writeHead(200,{'content-type':'text/html'})
+            res.writeHead(200,{'content-type':'text/html'}) 
             console.log(q.query.fname)
             res.write('<h2>'+q.query.fname+'</h2>')
             res.end()
