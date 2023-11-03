@@ -4,7 +4,7 @@ var url=require('url')
 http.createServer(function (req,res){
     fs.readFile('html.html',function (err,data){
 
-        var q=url.parse(req.url)
+        var q=url.parse(req.url,true)
         console.log(q.pathname)
 
         if(q.pathname==='/')
@@ -24,6 +24,10 @@ http.createServer(function (req,res){
             
         }else if(q.pathname==='/action')
         {
+            res.writeHead(200,{'content-type':'text/html'})
+            console.log(q.query.fname)
+            res.write('<h2>'+q.query.fname+'</h2>')
+            res.end()
             
         }
         else
