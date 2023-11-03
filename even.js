@@ -1,7 +1,11 @@
-for(i=0;i<=100;i++)
+
+k=10
+for(i=0;i<k;i++)
 {
-    if(i%2==0)
+    for(j=0;j<=i;j++)
     {
-        console.log(i)
+        console.log("*")
     }
+    console.log("\n")
 }
+
